@@ -45,7 +45,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "60"))
 #your start default command message.
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI am file store bot of @xclusive_backup @km_portal")
 #your telegram tag without @
-OWNER_TAG = os.environ.get("OWNER_TAG", "Sinsfull_bot")
+OWNER_TAG = os.environ.get("OWNER_TAG", "LAURENbale")
 #Time in seconds for message delete, put 0 to never delete
 TIME = int(os.environ.get("TIME", "600"))
 
