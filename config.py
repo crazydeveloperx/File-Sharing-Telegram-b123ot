@@ -24,7 +24,7 @@ BOT_STATS_TEXT = os.environ.get("BOTS_STATS_TEXT","<b>BOT UPTIME 🕊️</b>\n{u
 USER_REPLY_TEXT = os.environ.get("USER_REPLY_TEXT", "Don't send me messages directly I'm only working for @km_portal ‼️")
 
 #your bot token here from https://telegram.me/BotFather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7035510529:AAGlekdhHpZUMLXV4NRzzYarh9BbgvmJggQ") 
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7035510529:AAH96RvUzm5PuDw_O2LjaByVAOwRs1rdHeQ") 
 #your api id from https://my.telegram.org/apps
 APP_ID = int(os.environ.get("APP_ID", "21395055"))
 #your api hash from https://my.telegram.org/apps
@@ -38,7 +38,7 @@ PORT = os.environ.get("PORT", "8080")
 #your database url mongodb only You can use mongo atlas free cloud database
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://suryabhai991100:pPmTrc0DoyPsEcmn@cluster0.xpua4.mongodb.net/?retryWrites=true&w=majority")
 #your database name
-DB_NAME = os.environ.get("DB_NAME", "cluster0")
+DB_NAME = os.environ.get("DB_NAME", "Cluster0")
 
 #for creating telegram thread for bot to improve performance of the bot
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "60"))
