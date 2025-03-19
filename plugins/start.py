@@ -84,7 +84,7 @@ async def start_command(client: Client, message: Message):
                         ids = [int(int(argument[3]) / abs(client.db_channel.id))]
                     except:
                         return
-                temp_msg = await message.reply("Please wait... 🫷")
+                temp_msg = await message.reply("Please wait sir... 🫷")
                 try:
                     messages = await get_messages(client, ids)
                 except:
@@ -110,14 +110,14 @@ async def start_command(client: Client, message: Message):
                         pass
                 if (SECONDS == 0):
                     return
-                notification_msg = await message.reply(f"<b>🌺 <u>Notice</u> 🌺</b>\n\n<b>This file will be  deleted in {get_exp_time(SECONDS)}. Please save or forward it to your saved messages before it gets deleted.</b>")
+                notification_msg = await message.reply(f"<b>‼️ <u>Notice</u>‼️ </b>\n\n<b>This file will be  deleted in {get_exp_time(SECONDS)}. Please save or forward it to your saved messages before it gets deleted.</b>")
                 await asyncio.sleep(SECONDS)    
                 for snt_msg in snt_msgs:    
                     try:    
                         await snt_msg.delete()  
                     except: 
                         pass    
-                await notification_msg.edit("<b>Your file has been successfully deleted! 😼</b>")  
+                await notification_msg.edit("<b>Your file has been successfully deleted! by @km_portal</b>")  
                 return
             if (U_S_E_P):
                 if verify_status['is_verified'] and VERIFY_EXPIRE < (time.time() - verify_status['verified_time']):
@@ -275,10 +275,10 @@ async def not_joined(client: Client, message: Message):
         buttons = [
         [
             InlineKeyboardButton(
-                "Join Channel 👆",
+                "Join Please 👆",
                 url=client.invitelink),
             InlineKeyboardButton(
-                "Join Channel 👆",
+                "Join Please👆",
                 url=client.invitelink2),
         ]
     ]
@@ -533,7 +533,7 @@ if USE_PAYMENT:
             timestring = "1 year"
         try:
             await increasepremtime(user_id, timeforprem)
-            await message.reply("Premium added! 🤫")
+            await message.reply("Premium added! But pay on time for next month🤫")
             await client.send_message(
             chat_id=user_id,
             text=f"Update for you\n\nPremium plan of {timestring} added to your account. 🤫",
